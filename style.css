@@ -517,7 +517,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон для контраста */
+    background-color: rgba(51, 51, 51, 0.7); 
     padding: 20px;
     box-sizing: border-box;
 }
@@ -623,7 +623,7 @@ button {
 .social-icon img {
     width: 32px;
     height: 32px;
-    filter: brightness(0) invert(1); /* Белый цвет иконок */
+    filter: brightness(0) invert(1); 
     transition: background 0.3s;
 }
 
