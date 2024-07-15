@@ -103,6 +103,7 @@ header .subheading {
     letter-spacing: 0.1em;
     border: none;
     cursor: pointer;
+    margin-top: 4px;
 }
 
 .search-icon {
@@ -120,6 +121,7 @@ header .subheading {
     color: white;
     top: 260px;
     white-space: nowrap;
+    margin-top: 0px;
 }
 
 .scroll-down p {
@@ -165,7 +167,7 @@ header .subheading {
     font-weight: 700;
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 180px;
+    margin-left: 130px;
 }
 
 .nav-right {
@@ -183,8 +185,16 @@ header .subheading {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
+.nav-link:hover {
+    color: #080b19;
+    border-bottom: 2px solid #5373FD;
+}
+
+/* Стили для секции 1 */
 
 .section1 {
     width: 100%;
@@ -194,8 +204,16 @@ header .subheading {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 180px; 
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .container {
@@ -249,24 +267,372 @@ button {
 .images {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.images img {
+    width: 330px;
+    height: 210px;
+}
+
+.images-second img {
+    width: 330px;
+    height: 210px;
+    margin-left: 80px;
+
+} 
+
+/* Стили для секции 2 */
+.section2 {
+    width: 100%;
+    height: 306px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 1320px;
+    height: 306px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.icon {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-box:hover {
+    opacity: 0.8; 
+}
+
+.icon-text {
+    font-family: 'Aleo', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.dotted-line {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: 90px;
+}
+/* Стили для секции 3 */
+.section3 {
+    width: 100%;
+    height: 684px;
+    background-image: url('img/render-1477041_1280\ 1.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 648px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6); 
+    margin-right: 550px;
+    margin-top: 180px;
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.card-button {
+    width: 213px;
+    height: 60px;
+    background: linear-gradient(to right, #486BFE 50%, #5373FD 50%);
+    color: white;
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* Стили для секции 4 */
+.section4 {
+    width: 100%;
+    height: 684px;
+    background-image: url('img/spain-1859434_1280\ 1.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-second {
+    width: 648px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6); 
+    margin-right: -600px;
+    margin-top: 180px;
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.card-button {
+    width: 213px;
+    height: 60px;
+    background: linear-gradient(to right, #486BFE 50%, #5373FD 50%);
+    color: white;
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* Стили для секции 5 */
+.section5 {
+    width: 100%;
+    height: 600px;
+    background-image: url('img/BG.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.section5-title {
+    width: auto;
+    height: 40px;
+    margin-top: 120px;
+    font-family: 'Aleo', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.testimonial-container {
+    width: 1150px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон для контраста */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial-photo {
+    width: 440px;
+    height: 280px;
+    margin-left: -20px;
+}
+
+.testimonial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    width: 880px;
+    height: 280px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial-name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 28px;
+    margin: 0 0 10px;
+    margin-left: -520px;
+}
+
+.testimonial-quote {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 34px; 
+}
+
+.testimonial-quote p {
+    margin: 0;
+}
+
+.quote-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Стили для секции футер */
+.footer {
+    width: 100%;
+    height: 220px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
-.image1, .image2 {
-    width: 350px;
-    height: 220px;
+.footer-content {
+    text-align: center;
 }
 
-.image1 {
-    margin-top: 124px;
+.footer-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: white;
+    margin: 0;
 }
 
-.image2 {
-    margin-top: 16px;
+.footer-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: white;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.social-icon img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Белый цвет иконок */
+    transition: background 0.3s;
+}
+
+.social-icon:hover img {
+    filter: none;
+    background: #5373FD;
 }
 
 
-/* Адаптивность для меньших экранов */
 @media (max-width: 1366px) {
     body {
         width: 100%;
