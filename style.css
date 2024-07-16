@@ -1,20 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Aleo:wght@400&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    max-width: 1450px;
-    margin: 0 auto; 
+    max-width: 1920px; 
+    margin: 0 auto;
+    overflow-x: hidden; 
 }
 
-/* Стили для header */
 header {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url('img/HeaderBackground.svg'); 
+    background-image: url('img/HeaderBackground.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +37,6 @@ header h1 {
     font-weight: 700;
     line-height: 52px;
     margin: 0;
-    position: relative;
     color: white;
 }
 
@@ -66,7 +64,6 @@ header .subheading {
     background-color: white;
     border-radius: 5px;
     padding: 0 10px;
-    box-sizing: border-box;
 }
 
 .search-description {
@@ -78,7 +75,6 @@ header .subheading {
     letter-spacing: 0.2em;
     margin: 0;
     color: #999999;
-    ;
 }
 
 .search-form input {
@@ -87,7 +83,6 @@ header .subheading {
     font-size: 16px;
     border: none;
     outline: none;
-    box-sizing: border-box;
 }
 
 .search-form button {
@@ -126,6 +121,7 @@ header .subheading {
     margin-top: 0px;
 }
 
+
 .scroll-down p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
@@ -133,7 +129,6 @@ header .subheading {
     line-height: 20px;
     letter-spacing: 0.2em;
     margin: 0;
-    
 }
 
 .chevron-down {
@@ -143,8 +138,6 @@ header .subheading {
     cursor: pointer;
 }
 
-
-/* Стили для навигации */
 .navigation {
     width: 100%;
     height: 84px;
@@ -160,7 +153,6 @@ header .subheading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .nav-left .nav-logo {
@@ -196,7 +188,6 @@ header .subheading {
     border-bottom: 2px solid #5373FD;
 }
 
-/* Стили для секции 1 */
 .section1 {
     width: 100%;
     height: 704px;
@@ -207,7 +198,7 @@ header .subheading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 180px; 
+    padding-left: 180px;
     box-sizing: border-box;
 }
 
@@ -215,7 +206,6 @@ header .subheading {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .container {
@@ -273,9 +263,8 @@ button {
 }
 
 .images img {
-    width: 100%;
-    height: auto;
-    max-width: 330px;
+    width: 330px;
+    height: 210px;
 }
 
 .images-second img {
@@ -285,7 +274,7 @@ button {
     margin-left: 80px;
 }
 
-/* Стили для секции 2 */
+
 .section2 {
     width: 100%;
     height: 306px;
@@ -308,17 +297,17 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .icon {
-    width: 50px; 
+    width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
 .icon-box:hover {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .icon-text {
@@ -338,11 +327,10 @@ button {
     height: 90px;
 }
 
-/* Стили для секции 3 */
 .section3 {
     width: 100%;
     height: 684px;
-    background-image: url('img/render-1477041_1280\ 1.svg'); 
+    background-image: url('img/render-1477041_1280\ 1.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -359,9 +347,9 @@ button {
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     margin-right: 550px;
-    margin-top: 200px; /* Подняли карточку выше */
+    margin-top: 100px;
 }
 
 .card-title {
@@ -409,84 +397,35 @@ button {
     align-self: flex-start;
 }
 
-/* Стили для секции 4 */
 .section4 {
     width: 100%;
     height: 684px;
-    background-image: url('img/spain-1859434_1280\ 1.svg'); 
+    background-image: url('img/spain-1859434_1280\ 1.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
-    padding-top: -180px; 
+    align-items: center;
 }
 
-
 .card-container-second {
-    width: 600px;
-    height: 300px;
+    width: 648px;
+    height: 344px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     margin-right: -700px;
-    margin-top: 180px;
+    margin-top: 10px;
 }
 
-.card-title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-.card-subtitle {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #FFFFFF;
-    margin: 10px 0;
-}
-
-.card-text {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-    margin: 10px 0;
-}
-
-.card-button {
-    width: 213px;
-    height: 60px;
-    background: linear-gradient(to right, #486BFE 50%, #5373FD 50%);
-    color: white;
-    font-family: 'Aleo', serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.07em;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    align-self: flex-start;
-}
-
-/* Стили для секции 5 */
 .section5 {
     width: 100%;
     height: 600px;
-    background-image: url('img/BG.svg'); 
+    background-image: url('img/BG.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -517,14 +456,13 @@ button {
 }
 
 .testimonial-container {
-    width: 100%;
-    max-width: 1150px;
+    width: 1150px;
     height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(51, 51, 51, 0.7); 
+    background-color: rgba(51, 51, 51, 0.7);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -542,8 +480,7 @@ button {
 }
 
 .testimonial-text {
-    width: 100%;
-    max-width: 880px;
+    width: 880px;
     height: 280px;
     color: white;
     display: flex;
@@ -559,6 +496,7 @@ button {
     font-weight: 200;
     line-height: 28px;
     margin: 0 0 10px;
+    margin-left: -520px;
 }
 
 .testimonial-quote {
@@ -572,7 +510,7 @@ button {
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding-left: 34px; 
+    padding-left: 34px;
 }
 
 .testimonial-quote p {
@@ -585,7 +523,6 @@ button {
     margin-right: 10px;
 }
 
-/* Стили для секции футер */
 .footer {
     width: 100%;
     height: 220px;
@@ -630,29 +567,11 @@ button {
 .social-icon img {
     width: 32px;
     height: 32px;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
     transition: background 0.3s;
 }
 
 .social-icon:hover img {
     filter: none;
     background: #5373FD;
-}
-
-@media (max-width: 1366px) {
-    body {
-        width: 100%;
-    }
-    .images img,
-    .images-second img {
-        max-width: 100%;
-    }
-    .card-container,
-    .card-container-second {
-        margin-right: 0;
-        margin-top: 0;
-    }
-    .testimonial-container {
-        max-width: 100%;
-    }
 }
