@@ -195,6 +195,64 @@ header .subheading {
     border-bottom: 2px solid #5373FD;
 }
 
+
+/* Бургер-меню */
+.burger-menu {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+.burger-icon {
+    display: block;
+}
+
+/* Скрываем чекбокс */
+.burger-toggle {
+    display: none;
+}
+
+/* Мобильная навигация */
+.mobile-nav {
+    display: none; /* Скрываем мобильное меню по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.mobile-nav-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.close-icon {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
 /* Стили для секции 1 */
 .section1 {
     width: 100%;
@@ -636,59 +694,565 @@ button {
     filter: none;
     background: #5373FD;
 }
-@media (max-width: 1366px) {
+
+body {
+    max-width: 100%; 
+}
+
+header, .section1, .section3, .section4, .section5 {
+    height: auto; 
+    padding: 20px; 
+    background-size: contain; 
+}
+
+.header-content, .content-wrapper, .testimonial-container, .card-container, .card-container-second {
+    padding: 20px; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+header h1, .container h2, .section5-title, .icon-text {
+    font-size: 30px; 
+}
+
+header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testimonial-name, .testimonial-quote, .footer-title, .footer-subtitle {
+    font-size: 16px; 
+}
+
+.search-form {
+    flex-direction: column; 
+    width: 90%; 
+    margin-top: 20px; 
+}
+
+.search-form input, .search-form button {
+    width: 100%; 
+    margin-top: 5px; 
+}
+
+.navigation {
+    flex-direction: column; 
+    padding: 10px 0; 
+}
+
+.nav-container {
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.images img, .testimonial-photo, .icon {
+    width: 100%;
+    height: auto; 
+}
+
+.social-icon img {
+    width: 24px; 
+    height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Общие стили для body */
     body {
-        max-width: 100%; 
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
     }
 
-    header, .section1, .section3, .section4, .section5 {
-        height: auto; 
-        padding: 20px; 
-        background-size: contain; 
+    /* Хедер */
+    header {
+        height: 700px; /* Уменьшили высоту хедера */
     }
 
-    .header-content, .content-wrapper, .testimonial-container, .card-container, .card-container-second {
-        padding: 20px; 
-        flex-direction: column; 
-        align-items: center; 
+    .header-content {
+        top: 100px; /* Сместили контент вверх */
     }
 
-    header h1, .container h2, .section5-title, .icon-text {
-        font-size: 30px; 
+    /* Заголовок Bhromaon */
+    header h1 {
+        width: auto;
+        height: auto;
+        font-size: 36px; /* Уменьшили размер шрифта */
+        line-height: 40px;
+        left: auto;
+        top: auto;
     }
 
-    header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testimonial-name, .testimonial-quote, .footer-title, .footer-subtitle {
-        font-size: 16px; 
+    /* Подзаголовок Safe Travel Anywhere */
+    header .subheading {
+        width: auto;
+        height: auto;
+        font-size: 18px; /* Уменьшили размер шрифта */
+        line-height: 24px;
+        left: auto;
+        top: auto;
     }
 
+    /* Форма поиска */
     .search-form {
-        flex-direction: column; 
-        width: 90%; 
-        margin-top: 20px; 
+        width: auto;
+        max-width: 90%;
+        left: auto;
+        top: auto;
+        margin-top: 20px;
     }
 
-    .search-form input, .search-form button {
-        width: 100%; 
-        margin-top: 5px; 
+    .search-form button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+        margin-top: 10px;
     }
 
+    .search-description {
+        width: auto;
+        font-size: 12px;
+    }
+
+    /* Меню навигации */
     .navigation {
-        flex-direction: column; 
-        padding: 10px 0; 
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-container {
-        flex-wrap: wrap;
-        justify-content: center; 
-    }
-
-    .images img, .testimonial-photo, .icon {
         width: 100%;
-        height: auto; 
+        flex-direction: column;
+        align-items: center;
     }
 
-    .social-icon img {
-        width: 24px; 
-        height: 24px;
+    .nav-left .nav-logo {
+        margin-left: 0;
+        margin-top: 5px;
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    .nav-logo {
+        margin-top: -3px;
+    }
+
+    .nav-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .nav-right .nav-link {
+        font-size: 12px; /* Уменьшили размер шрифта */
+    }
+
+    /* Секция 1 */
+    .section1 {
+        padding-left: 20px; /* Уменьшили отступ слева */
+        padding-right: 20px; /* Добавили отступ справа */
+    }
+
+    .section1 .container h2 {
+        font-size: 24px; /* Уменьшили размер шрифта */
+    }
+
+    .section1 .body-text {
+        font-size: 12px; /* Уменьшили размер шрифта */
+    }
+
+    .section1 .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 .images img {
+        width: 60%; /* Уменьшили размеры изображений */
+        max-width: 200px;
+    }
+
+    /* Секция 2 */
+    .section2 {
+        padding: 20px;
+    }
+
+    .icon-container {
+        flex-direction: row; /* Разместили элементы по горизонтали */
+        gap: 20px;
+        justify-content: center; /* Центрировали элементы */
+        align-items: center; /* Выравнивание по центру */
+    }
+
+    .icon-box {
+        width: auto; /* Автоматическая ширина */
+        text-align: center;
+        padding: 10px; /* Добавили отступы */
+    }
+
+    .icon-text {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    /* Секция 3 */
+    .section3 .card-container {
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .section3 .card-title {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    .section3 .card-text {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    .section3 .card-button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    /* Секция 4 */
+    .section4 {
+        padding: 20px;
+    }
+
+    .section4 .card-container-second {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .section4 .card-title {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    .section4 .card-text {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    .section4 .card-button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    /* Секция 5 */
+    .section5 {
+        padding: 20px;
+    }
+
+    .section5-content {
+        margin-top: 0;
+    }
+
+    .section5-title {
+        font-size: 24px; /* Уменьшили размер шрифта */
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .testimonial-photo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-quote {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    /* Футер */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icon {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Общие стили для body */
+    body {
+        width: 576px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    /* Хедер */
+    header {
+        height: 500px; /* Уменьшили высоту хедера */
+    }
+
+    .header-content {
+        top: 50px; /* Сместили контент вверх */
+    }
+
+    /* Заголовок Bhromaon */
+    header h1 {
+        font-size: 32px; /* Уменьшили размер шрифта */
+        line-height: 36px;
+    }
+
+    /* Подзаголовок Safe Travel Anywhere */
+    header .subheading {
+        font-size: 16px; /* Уменьшили размер шрифта */
+        line-height: 20px;
+    }
+
+    /* Форма поиска */
+    .search-form {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .search-form button {
+        width: 120px; /* Уменьшили ширину кнопки */
+        height: 40px; /* Уменьшили высоту кнопки */
+        padding: 5px 10px;
+    }
+
+    .search-description {
+        font-size: 12px;
+    }
+
+    /* Меню навигации */
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-left .nav-logo {
+        font-size: 16px; /* Уменьшили размер шрифта */
+        margin-left: 20px;
+    }
+
+    .nav-right {
+        display: none; /* Скрываем навигацию для мобильной версии */
+    }
+
+    .burger-menu {
+        display: block; /* Показываем бургер-меню */
+    }
+
+    /* Мобильная навигация */
+    .mobile-nav {
+        display: none; /* Скрываем мобильное меню по умолчанию */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav a {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        margin: 10px 0;
+    }
+
+    .mobile-nav-header {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .close-icon {
+        font-size: 36px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Показать мобильное меню, когда чекбокс включен */
+    #burger-toggle:checked ~ .mobile-nav {
+        display: flex;
+    }
+
+    /* Секция 1 */
+    .section1 {
+        padding: 20px; /* Уменьшили отступы */
+    }
+
+    .section1 .container h2 {
+        font-size: 20px; /* Уменьшили размер шрифта */
+    }
+
+    .section1 .body-text {
+        font-size: 12px; /* Уменьшили размер шрифта */
+    }
+
+    .section1 .images img {
+        width: 80%; /* Уменьшили размеры изображений */
+    }
+
+    /* Секция 2 */
+    .section2 {
+        padding: 20px;
+    }
+
+    .icon-container {
+        flex-direction: row; /* Разместили элементы по горизонтали */
+        gap: 20px;
+        justify-content: center; /* Центрировали элементы */
+        align-items: center; /* Выравнивание по центру */
+        flex-wrap: wrap; /* Разрешили перенос строк */
+    }
+
+    .icon-box {
+        width: auto; /* Автоматическая ширина */
+        text-align: center;
+        padding: 10px; /* Добавили отступы */
+    }
+
+    .icon-text {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    .icon {
+        width: 40px; /* Уменьшили размер иконок */
+        height: 40px;
+    }
+
+    /* Секция 3 */
+    .section3 {
+        padding: 20px;
+    }
+
+    .section3 .card-container {
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .section3 .card-title {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    .section3 .card-text {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    .section3 .card-button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    /* Секция 4 */
+    .section4 {
+        padding: 20px;
+    }
+
+    .section4 .card-container-second {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .section4 .card-title {
+        font-size: 18px; /* Уменьшили размер шрифта */
+    }
+
+    .section4 .card-text {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    .section4 .card-button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    /* Секция 5 */
+    .section5 {
+        padding: 20px;
+    }
+
+    .section5-content {
+        margin-top: 0;
+    }
+
+    .section5-title {
+        font-size: 24px; /* Уменьшили размер шрифта */
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .testimonial-photo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-quote {
+        font-size: 14px; /* Уменьшили размер шрифта */
+    }
+
+    /* Футер */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icon {
+        margin: 0 5px;
     }
 }
