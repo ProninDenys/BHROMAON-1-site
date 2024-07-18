@@ -198,7 +198,7 @@ header .subheading {
 
 /* Бургер-меню */
 .burger-menu {
-    display: none; /* Скрываем бургер-меню по умолчанию */
+    display: none; 
     cursor: pointer;
     font-size: 24px;
     color: white;
@@ -209,14 +209,14 @@ header .subheading {
     display: block;
 }
 
-/* Скрываем чекбокс */
+
 .burger-toggle {
     display: none;
 }
 
-/* Мобильная навигация */
+
 .mobile-nav {
-    display: none; /* Скрываем мобильное меню по умолчанию */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -418,7 +418,7 @@ button {
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.6); 
     margin-right: 550px;
-    margin-top: 200px; /* Подняли карточку выше */
+    margin-top: 200px; 
 }
 
 .card-title {
@@ -751,7 +751,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
 }
 
 @media screen and (max-width: 768px) {
-    /* Общие стили для body */
+    
     body {
         width: 100%;
         height: auto;
@@ -760,36 +760,36 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
         position: relative;
     }
 
-    /* Хедер */
+    
     header {
-        height: 700px; /* Уменьшили высоту хедера */
+        height: 700px; 
     }
 
     .header-content {
-        top: 100px; /* Сместили контент вверх */
+        top: 100px; 
     }
 
-    /* Заголовок Bhromaon */
+    
     header h1 {
         width: auto;
         height: auto;
-        font-size: 36px; /* Уменьшили размер шрифта */
+        font-size: 36px; 
         line-height: 40px;
         left: auto;
         top: auto;
     }
 
-    /* Подзаголовок Safe Travel Anywhere */
+   
     header .subheading {
         width: auto;
         height: auto;
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px; 
         line-height: 24px;
         left: auto;
         top: auto;
     }
 
-    /* Форма поиска */
+    
     .search-form {
         width: auto;
         max-width: 90%;
@@ -810,7 +810,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
         font-size: 12px;
     }
 
-    /* Меню навигации */
+   
     .navigation {
         height: auto;
         flex-direction: column;
@@ -826,7 +826,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     .nav-left .nav-logo {
         margin-left: 0;
         margin-top: 5px;
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
     .nav-logo {
@@ -843,21 +843,21 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .nav-right .nav-link {
-        font-size: 12px; /* Уменьшили размер шрифта */
+        font-size: 12px; 
     }
 
-    /* Секция 1 */
+   
     .section1 {
-        padding-left: 20px; /* Уменьшили отступ слева */
-        padding-right: 20px; /* Добавили отступ справа */
+        padding-left: 20px; 
+        padding-right: 20px; 
     }
 
     .section1 .container h2 {
-        font-size: 24px; /* Уменьшили размер шрифта */
+        font-size: 24px; 
     }
 
     .section1 .body-text {
-        font-size: 12px; /* Уменьшили размер шрифта */
+        font-size: 12px; 
     }
 
     .section1 .images {
@@ -866,33 +866,33 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section1 .images img {
-        width: 60%; /* Уменьшили размеры изображений */
+        width: 60%; 
         max-width: 200px;
     }
 
-    /* Секция 2 */
+ 
     .section2 {
         padding: 20px;
     }
 
     .icon-container {
-        flex-direction: row; /* Разместили элементы по горизонтали */
+        flex-direction: row; 
         gap: 20px;
-        justify-content: center; /* Центрировали элементы */
-        align-items: center; /* Выравнивание по центру */
+        justify-content: center; 
+        align-items: center; 
     }
 
     .icon-box {
-        width: auto; /* Автоматическая ширина */
+        width: auto; 
         text-align: center;
-        padding: 10px; /* Добавили отступы */
+        padding: 10px; 
     }
 
     .icon-text {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px;
     }
 
-    /* Секция 3 */
+    
     .section3 .card-container {
         margin: 20px auto;
         width: 90%;
@@ -901,11 +901,11 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section3 .card-title {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px; 
     }
 
     .section3 .card-text {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
     .section3 .card-button {
@@ -927,11 +927,11 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section4 .card-title {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px;
     }
 
     .section4 .card-text {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px;
     }
 
     .section4 .card-button {
@@ -940,7 +940,6 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
         padding: 10px 20px;
     }
 
-    /* Секция 5 */
     .section5 {
         padding: 20px;
     }
@@ -950,7 +949,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section5-title {
-        font-size: 24px; /* Уменьшили размер шрифта */
+        font-size: 24px; 
     }
 
     .testimonial-container {
@@ -970,10 +969,9 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .testimonial-quote {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
-    /* Футер */
     .footer {
         padding: 20px;
     }
@@ -993,7 +991,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
 }
 
 @media screen and (max-width: 576px) {
-    /* Общие стили для body */
+    
     body {
         width: 576px;
         height: auto;
@@ -1002,44 +1000,42 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
         position: relative;
     }
 
-    /* Хедер */
     header {
-        height: 500px; /* Уменьшили высоту хедера */
+        height: 500px; 
     }
 
     .header-content {
-        top: 50px; /* Сместили контент вверх */
+        top: 50px; 
     }
 
-    /* Заголовок Bhromaon */
+    
     header h1 {
-        font-size: 32px; /* Уменьшили размер шрифта */
+        font-size: 32px; 
         line-height: 36px;
     }
 
-    /* Подзаголовок Safe Travel Anywhere */
+  
     header .subheading {
-        font-size: 16px; /* Уменьшили размер шрифта */
+        font-size: 16px; 
         line-height: 20px;
     }
 
-    /* Форма поиска */
+   
     .search-form {
         width: 90%;
         margin-top: 20px;
     }
 
     .search-form button {
-        width: 120px; /* Уменьшили ширину кнопки */
-        height: 40px; /* Уменьшили высоту кнопки */
+        width: 120px; 
+        height: 40px; 
         padding: 5px 10px;
     }
 
     .search-description {
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    /* Меню навигации */
     .navigation {
         flex-direction: column;
         align-items: center;
@@ -1052,21 +1048,20 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .nav-left .nav-logo {
-        font-size: 16px; /* Уменьшили размер шрифта */
+        font-size: 16px; 
         margin-left: 20px;
     }
 
     .nav-right {
-        display: none; /* Скрываем навигацию для мобильной версии */
+        display: none; 
     }
 
     .burger-menu {
-        display: block; /* Показываем бургер-меню */
+        display: block;
     }
 
-    /* Мобильная навигация */
     .mobile-nav {
-        display: none; /* Скрываем мобильное меню по умолчанию */
+        display: none; 
         position: fixed;
         top: 0;
         left: 0;
@@ -1103,26 +1098,26 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
         cursor: pointer;
     }
 
-    /* Показать мобильное меню, когда чекбокс включен */
+    
     #burger-toggle:checked ~ .mobile-nav {
         display: flex;
     }
 
     /* Секция 1 */
     .section1 {
-        padding: 20px; /* Уменьшили отступы */
+        padding: 20px; 
     }
 
     .section1 .container h2 {
-        font-size: 20px; /* Уменьшили размер шрифта */
+        font-size: 20px;
     }
 
     .section1 .body-text {
-        font-size: 12px; /* Уменьшили размер шрифта */
+        font-size: 12px; 
     }
 
     .section1 .images img {
-        width: 80%; /* Уменьшили размеры изображений */
+        width: 80%; 
     }
 
     /* Секция 2 */
@@ -1131,25 +1126,25 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .icon-container {
-        flex-direction: row; /* Разместили элементы по горизонтали */
+        flex-direction: row; 
         gap: 20px;
-        justify-content: center; /* Центрировали элементы */
-        align-items: center; /* Выравнивание по центру */
-        flex-wrap: wrap; /* Разрешили перенос строк */
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
     }
 
     .icon-box {
-        width: auto; /* Автоматическая ширина */
+        width: auto; 
         text-align: center;
-        padding: 10px; /* Добавили отступы */
+        padding: 10px; 
     }
 
     .icon-text {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px; 
     }
 
     .icon {
-        width: 40px; /* Уменьшили размер иконок */
+        width: 40px; 
         height: 40px;
     }
 
@@ -1166,11 +1161,11 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section3 .card-title {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px; 
     }
 
     .section3 .card-text {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
     .section3 .card-button {
@@ -1192,11 +1187,11 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section4 .card-title {
-        font-size: 18px; /* Уменьшили размер шрифта */
+        font-size: 18px; 
     }
 
     .section4 .card-text {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
     .section4 .card-button {
@@ -1215,7 +1210,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .section5-title {
-        font-size: 24px; /* Уменьшили размер шрифта */
+        font-size: 24px; 
     }
 
     .testimonial-container {
@@ -1235,7 +1230,7 @@ header .subheading, .body-text, .card-title, .card-subtitle, .card-text, .testim
     }
 
     .testimonial-quote {
-        font-size: 14px; /* Уменьшили размер шрифта */
+        font-size: 14px; 
     }
 
     /* Футер */
