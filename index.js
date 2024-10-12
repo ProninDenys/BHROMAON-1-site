@@ -1,7 +1,7 @@
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        // Проверяем, существует ли элемент с таким ID
+        // Check if the element with the given ID exists
         const targetElement = document.querySelector(this.getAttribute('href'));
         if (targetElement) {
             e.preventDefault();
@@ -57,10 +57,10 @@ if (searchForm) {
         e.preventDefault();
         const searchInput = document.querySelector('.search-description').value.trim();
         if (searchInput === '') {
-            alert('Пожалуйста, введите место назначения для поиска');
+            alert('Please enter a destination to search');
         } else {
-            // Здесь можно добавить логику для отправки запроса
-            console.log(`Поиск: ${searchInput}`);
+            // Add logic here for submitting the request
+            console.log(`Search: ${searchInput}`);
         }
     });
 }
@@ -96,7 +96,7 @@ if ('IntersectionObserver' in window) {
         observer.observe(element);
     });
 } else {
-    // Фолбэк для браузеров, не поддерживающих IntersectionObserver
+    // Fallback for browsers that don't support IntersectionObserver
     animatedElements.forEach(element => {
         element.classList.add('animated');
     });
